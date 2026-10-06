@@ -1,5 +1,6 @@
 body {
     font-family: "BIZ UDPGothic", sans-serif;
+    overflow-x: hidden;
 }
 
 button {
