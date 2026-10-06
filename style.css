@@ -6,15 +6,30 @@ button {
     font-weight: bold;
 }
 
+/* バス停ボタン */
 .busstop {
-    display:block;
-    box-sizing:border-box;
-    text-align:center;
-    font-size:28px;
-    padding:20px;
-    width:80%;
-    margin-bottom:40px;
-    margin-left:auto;
-    margin-right:auto;
-    border-radius:30px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-size: 28px;
+    padding: 20px;
+    width: 80%;
+
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 30px;
+}
+
+/* タイル共通 */
+.tile {
+    width: 100%;
+    font-size: 40px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-weight: bold;
 }
