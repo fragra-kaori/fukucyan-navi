@@ -64,8 +64,10 @@ button {
     width: 100%;
     aspect-ratio: 1 / 1;
 
-    font-size: 30px;
+    font-size: 28px;
+
+    margin-top: 30px;
 
     border: 5px solid white;
-    border-radius: 30px;
+    border-radius: 20px;
 }
