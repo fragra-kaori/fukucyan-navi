@@ -37,10 +37,13 @@ button {
 
 .page-header{
     display:grid;
-    grid-template-columns:1.3fr 2fr;
+    grid-template-columns:1.5fr 2fr;
     gap:20px;
     align-items:center;
     margin-bottom:20px;
+
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .top-button{
