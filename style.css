@@ -85,6 +85,22 @@ button {
 
 .busstop::before {
     counter-increment: stopnumber;
-    content: counter(stopnumber) "． ";
+    content: counter(stopnumber);
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+    text-align: center;
+
+    background: #1976d2;
+    color: white;
+
+    border-radius: 50%;
+
     font-weight: bold;
+
+    margin-right: 12px;
 }
