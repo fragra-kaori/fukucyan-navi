@@ -1,3 +1,4 @@
+/*基本設定*/
 body {
     font-family: "BIZ UDPGothic", sans-serif;
     overflow-x: hidden;
@@ -5,23 +6,6 @@ body {
 
 button {
     font-weight: bold;
-}
-
-/* バス停ボタン */
-.busstop {
-    display: block;
-    box-sizing: border-box;
-    text-align: center;
-
-    font-size: 28px;
-    padding: 20px;
-    width: 80%;
-
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-
-    border-radius: 30px;
 }
 
 /* タイル共通 */
@@ -35,6 +19,7 @@ button {
     font-weight: bold;
 }
 
+/*画面上部*/
 .page-header{
     display:grid;
     grid-template-columns:1.5fr 2fr;
@@ -63,6 +48,7 @@ button {
     color:white;
 }
 
+/*コース選択*/
 .route-button {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -73,4 +59,32 @@ button {
 
     border: 5px solid white;
     border-radius: 20px;
+}
+
+/* バス停 */
+.stops {
+    counter-reset: stopnumber;
+}
+
+/* バス停ボタン */
+.busstop {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-size: 28px;
+    padding: 20px;
+    width: 80%;
+
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 30px;
+}
+
+.busstop::before {
+    counter-increment: stopnumber;
+    content: counter(stopnumber) "． ";
+    font-weight: bold;
 }
