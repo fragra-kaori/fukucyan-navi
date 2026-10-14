@@ -70,10 +70,11 @@ button {
 }
 
 .page-title{
-    margin:0;
-    font-size:30px;
+    margin:20px 0 10px 0;
+    font-size:34px;
     color:white;
     text-align:center;
+    font-weight:bold;
 }
 
 /*コース選択*/
