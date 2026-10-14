@@ -11,12 +11,15 @@ button {
 /* タイル共通 */
 .tile {
     width: 100%;
-    font-size: 40px;
 
-    border: none;
+    font-size: clamp(24px, 4vw, 40px);
+
+    border:none;
     border-radius: 30px;
 
     font-weight: bold;
+
+    white-space: nowrap;
 }
 
 .busstop{
