@@ -19,6 +19,10 @@ button {
     font-weight: bold;
 }
 
+.busstop{
+    font-size: clamp(20px, 4vw, 28px);
+}
+
 /*画面上部*/
 .page-header{
     display:grid;
