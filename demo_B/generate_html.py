@@ -111,6 +111,8 @@ for sheet_name, region, bus_list in ROUTES:
     for bus_no in bus_list:
 
         time_col = f"{bus_no}便"
+        
+        print(time_col)
 
         html = create_header(region, bus_no)
 
