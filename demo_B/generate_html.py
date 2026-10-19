@@ -136,7 +136,7 @@ style="background:white; color:black;">
 
         html += create_footer()
 
-        output_file = f"{region}_{bus_no}_auto.html"
+        output_file = Path("auto") / f"{region}_{bus_no}.html"
 
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(html)
