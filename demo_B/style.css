@@ -57,6 +57,12 @@ button {
     border:5px solid #f8d408;
 }
 
+.back-course-button{
+    background:#f8f8f8;
+    color:black;
+    border:5px solid #f8d408;
+}
+
 .home-container{
     max-width:700px;
     margin:0 auto;
