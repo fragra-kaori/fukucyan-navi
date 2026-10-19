@@ -1,6 +1,8 @@
 import pandas as pd
 from pathlib import Path
 
+Path("auto").mkdir(exist_ok=True)
+
 EXCEL_FILE = "バス停緯度経度時刻.xlsx"
 
 ROUTES = [
