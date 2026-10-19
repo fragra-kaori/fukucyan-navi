@@ -100,7 +100,6 @@ for sheet_name, region, bus_list in ROUTES:
         engine="openpyxl"
     )
 
-    print(df.columns.tolist())
 
     columns = list(df.columns)
 
