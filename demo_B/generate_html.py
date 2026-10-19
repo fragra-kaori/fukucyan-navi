@@ -100,11 +100,13 @@ for sheet_name, region, bus_list in ROUTES:
         engine="openpyxl"
     )
 
+    print(df.columns.tolist())
+
     columns = list(df.columns)
 
     stop_col = columns[0]
-    lat_col = columns[1]
-    lon_col = columns[2]
+    lat_col = columns[3]
+    lon_col = columns[4]
 
     for bus_no in bus_list:
 
