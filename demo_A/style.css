@@ -1,0 +1,135 @@
+/*基本設定*/
+body {
+    font-family: "BIZ UDPGothic", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    font-weight: bold;
+}
+
+/* タイル共通 */
+.tile {
+    width: 100%;
+
+    font-size: clamp(24px, 4vw, 40px);
+
+    border:none;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+/*画面上部*/
+.page-header{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:center;
+}
+
+.left-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.top-button,
+.map-button{
+    width:100%;
+    height:100px;
+    margin-top:30px;
+    border-radius:30px;
+    font-size:clamp(18px,3vw,25px);
+    color:black;
+}
+
+.top-button{
+    background:#f8d408;
+    border:none;    
+    white-space:nowrap;
+}
+
+.map-button{
+    background:white;
+    border:5px solid #f8d408;
+}
+
+.home-container{
+    max-width:700px;
+    margin:0 auto;
+}
+
+.page-title{
+    margin:20px 0 10px 0;
+    font-size:34px;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+}
+
+/*コース選択*/
+.route-button {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: clamp(22px, 4vw, 32px);
+    margin-top: 10px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+/* バス停 */
+.stops {
+    counter-reset: stopnumber;
+}
+
+/* バス停ボタン */
+.busstop {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-size: clamp(20px, 4vw, 28px);
+    padding: 20px;
+    width: 80%;
+
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 30px;
+}
+
+.busstop::before {
+    counter-increment: stopnumber;
+    content: counter(stopnumber);
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+    text-align: center;
+
+    background: #333;
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    margin-right: 12px;
+}
+
+.stop-list{
+    margin-top:30px;
+    margin-bottom:60px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
