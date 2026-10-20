@@ -55,14 +55,14 @@ background:#a35050;
 </button>
 </a>
 
-<a href="map-map.html
+<a href="../map/{region}-map.html">
 <button class="map-button">
 🗺️地図を<br>
 見る
 </button>
 </a>
 
-{region}.html
+<a href="../{region}.html">
 <button class="top-button back-course-button">
 🌻<br>
 {REGION_NAME[region]}コースへ<br>
