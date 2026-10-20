@@ -29,7 +29,7 @@ def create_header(region, bus_no):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="..style.css">
+<link rel="stylesheet" href="../style.css">
 
 <title>{REGION_NAME[region]}コース{bus_no}便</title>
 </head>
@@ -48,7 +48,7 @@ background:#a35050;
 
 <div class="page-header">
 
-<a href="index.html">
+<a href="../index.html">
 <button class="top-button">
 🏠トップへ<br>
 もどる
