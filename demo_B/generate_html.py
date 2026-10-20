@@ -128,8 +128,8 @@ for sheet_name, region, bus_list in ROUTES:
             lat = row[lat_col]
             lon = row[lon_col]
 
-            if pd.isna(bus_time):
-                continue
+            if bus_time.startswith("0"):
+                 bus_time = bus_time[1:]
 
             html += f"""
 <button class="busstop"
