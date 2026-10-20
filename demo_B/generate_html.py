@@ -109,7 +109,9 @@ for sheet_name, region, bus_list in ROUTES:
 
     for bus_no in bus_list:
 
-        time_col = columns[bus_no]
+        time_col = f"{bus_no}便".translate(
+            str.maketrans("1234", "１２３４")
+        )
 
         print(time_col)
 
