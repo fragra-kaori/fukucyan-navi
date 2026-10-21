@@ -130,12 +130,13 @@ for sheet_name, region, bus_list in ROUTES:
             lon = row[lon_col]
 
             if pd.isna(bus_time):
-             continue
+                continue
 
-            bus_time = bus_time.strftime("%H:%M")
+            bus_time = str(bus_time)
 
-            if bus_time.startswith("0"):
-             bus_time = bus_time[1:]
+            if ":" in bus_time:
+                parts = bus_time.split(":")
+                bus_time = f"{int(parts[0])}:{parts[1]}"
 
             html += f"""
 
