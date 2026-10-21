@@ -132,7 +132,7 @@ for sheet_name, region, bus_list in ROUTES:
             if pd.isna(bus_time):
              continue
 
-            bus_time = str(bus_time)[:5]
+            bus_time = bus_time.strftime("%H:%M")
 
             if bus_time.startswith("0"):
              bus_time = bus_time[1:]
