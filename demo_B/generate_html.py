@@ -125,13 +125,20 @@ for sheet_name, region, bus_list in ROUTES:
                 continue
 
             bus_time = row[time_col]
+
             lat = row[lat_col]
             lon = row[lon_col]
 
+            if pd.isna(bus_time):
+             continue
+
+            bus_time = str(bus_time)[:5]
+
             if bus_time.startswith("0"):
-                 bus_time = bus_time[1:]
+             bus_time = bus_time[1:]
 
             html += f"""
+
 <button class="busstop"
 onclick="window.location.href='https://www.google.com/maps?q={lat},{lon}'"
 style="background:white; color:black;">
