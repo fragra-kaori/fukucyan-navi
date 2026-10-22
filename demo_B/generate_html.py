@@ -1,6 +1,14 @@
 import pandas as pd
 from pathlib import Path
 
+import pandas as pd
+from pathlib import Path
+
+print("★★★ generate_html.py 起動 ★★★")
+
+Path("auto").mkdir(exist_ok=True)
+
+
 Path("auto").mkdir(exist_ok=True)
 
 EXCEL_FILE = "バス停緯度経度時刻.xlsx"
@@ -130,13 +138,18 @@ for sheet_name, region, bus_list in ROUTES:
             lon = row[lon_col]
 
             if pd.isna(bus_time):
-                continue
+             continue
 
+            # Excelの時刻を文字列化
             bus_time = str(bus_time)
 
-            if ":" in bus_time:
-                parts = bus_time.split(":")
-                bus_time = f"{int(parts[0])}:{parts[1]}"
+            # 08:40:00 → 08:40
+            if len(bus_time) >= 5:
+             bus_time = bus_time[:5]
+
+            # 08:40 → 8:40
+            if bus_time.startswith("0"):
+             bus_time = bus_time[1:]
 
             html += f"""
 
