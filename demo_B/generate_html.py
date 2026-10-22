@@ -63,7 +63,7 @@ background:#a35050;
 </button>
 </a>
 
-<a href="../map/{region}-map.html">
+<a href="../../map/{region}-map.html">
 <button class="map-button">
 🗺️地図を<br>
 見る
