@@ -75,6 +75,13 @@ button {
     font-weight:bold;
 }
 
+.course-day{
+    text-align:center;
+    font-size:20px;
+    letter-spacing:-1px;
+    font-weight:bold;
+}
+
 /*コース選択*/
 .route-button {
     width: 100%;
