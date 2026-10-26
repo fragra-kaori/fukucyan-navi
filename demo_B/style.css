@@ -68,7 +68,7 @@ button {
 }
 
 .page-title{
-    margin:5px 0 10px 0;
+    margin:2px 0 10px 0;
     font-size:34px;
     color:white;
     text-align:center;
@@ -76,6 +76,7 @@ button {
 }
 
 .course-day{
+    margin:5px 0 10px 0;
     text-align:center;
     font-size:25px;
     letter-spacing:-1px;
