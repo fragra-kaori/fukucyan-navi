@@ -1,13 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-import pandas as pd
-from pathlib import Path
-
 print("★★★ generate_html.py 起動 ★★★")
-
-Path("auto").mkdir(exist_ok=True)
-
 
 Path("auto").mkdir(exist_ok=True)
 
@@ -139,8 +133,11 @@ for sheet_name, region, bus_list in ROUTES:
 
             image_file = row["画像"]
 
+            if pd.isna(image_file):
+                image_file = ""
+
             if pd.isna(bus_time):
-             continue
+                continue
 
             # Excelの時刻を文字列化
             bus_time = str(bus_time)
@@ -152,15 +149,23 @@ for sheet_name, region, bus_list in ROUTES:
             # 08:40 → 8:40
             if bus_time.startswith("0"):
              bus_time = bus_time[1:]
-
+            
             html += f"""
+            <div class="busstop-row">
 
-<button class="busstop"
-onclick="window.location.href='https://www.google.com/maps?q={lat},{lon}'"
-style="background:white; color:black;">
-{bus_time}　{stop_name}
-</button>
-"""
+            <a href="../busstop_images/{image_file}" target="_blank">
+            <img src="../busstop_images/{image_file}"
+            class="stop-image">
+            </a>
+
+            <button class="busstop"
+            onclick="window.location.href='https://www.google.com/maps?q={lat},{lon}'"
+            style="background:white; color:black;">
+            {bus_time}  {stop_name}
+            </button>
+
+            </div>
+            """
 
         html += create_footer()
 
