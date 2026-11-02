@@ -42,6 +42,13 @@ padding:0;
 background:#a35050;
 ">
 
+REGION_COLOR = {
+    "honcho": "#1976d2",
+    "syuri": "#5a19d2",
+    "mawashi": "#a35050",
+    "oroku": "#058d33",
+}
+
 <div class="home-container">
 
 <h1 class="page-title">
@@ -50,7 +57,7 @@ background:#a35050;
 
 <div class="page-header">
 
-<a href="../index.html">
+<a href="../../index.html">
 <button class="top-button">
 🏠トップへ<br>
 もどる
