@@ -104,6 +104,7 @@ for sheet_name, region, bus_list in ROUTES:
 
 
     columns = list(df.columns)
+    print(columns)
 
     stop_col = "バス停名"
     lat_col = "緯度"
