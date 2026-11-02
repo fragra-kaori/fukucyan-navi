@@ -23,6 +23,12 @@ REGION_NAME = {
     "oroku": "小禄",
 }
 
+REGION_COLOR = {
+    "honcho": "#1976d2",
+    "syuri": "#5a19d2",
+    "mawashi": "#a35050",
+    "oroku": "#058d33",
+}
 
 def create_header(region, bus_no):
 
@@ -39,15 +45,8 @@ def create_header(region, bus_no):
 <body style="
 margin:0;
 padding:0;
-background:#a35050;
+background:{REGION_COLOR[region]};
 ">
-
-REGION_COLOR = {
-    "honcho": "#1976d2",
-    "syuri": "#5a19d2",
-    "mawashi": "#a35050",
-    "oroku": "#058d33",
-}
 
 <div class="home-container">
 
