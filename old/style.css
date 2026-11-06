@@ -1,0 +1,158 @@
+/*基本設定*/
+body {
+    font-family: "BIZ UDPGothic", sans-serif;
+    overflow-x: hidden;
+    background:pink !important;
+}
+
+button {
+    font-weight: bold;
+}
+
+/* タイル共通 */
+.tile {
+    width: 100%;
+
+    font-size: clamp(24px, 4vw, 40px);
+
+    border:none;
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+/*画面上部*/
+.page-header{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:center;
+}
+
+.left-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.top-button,
+.map-button{
+    width:100%;
+    height:100px;
+    border-radius:30px;
+    font-size:clamp(18px,3vw,25px);
+    color:black;
+}
+
+.top-button{
+    background:#f8d408;
+    border:none;    
+    white-space:nowrap;
+}
+
+.map-button{
+    background:white;
+    border:5px solid #f8d408;
+}
+
+.back-course-button{
+    background:#f8f8f8;
+    color:black;
+    border:5px solid #f8d408;
+}
+
+.home-container{
+    max-width:700px;
+    margin:0 auto;
+}
+
+.page-title{
+    margin:20px 0 10px 0;
+    font-size:34px;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+}
+
+/*コース選択*/
+.route-button {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: clamp(22px, 4vw, 32px);
+    margin-top: 10px;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+/* バス停 */
+.stops {
+    counter-reset: stopnumber;
+}
+
+/* バス停ボタン */
+.busstop {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+
+    font-size: clamp(20px, 4vw, 28px);
+    padding: 20px;
+
+    flex:1;
+
+    margin-bottom: 25px;
+
+    border-radius: 30px;
+}
+
+.busstop::before {
+    counter-increment: stopnumber;
+    content: counter(stopnumber);
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    line-height: 40px;
+    text-align: center;
+
+    background: #333;
+    color: white;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    margin-right: 12px;
+}
+
+.stop-list{
+    margin-top:30px;
+    margin-bottom:60px;
+}
+
+.busstop-row{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:12px;
+
+    border:1px solid red;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stop-image{
+    width:120px;
+    height:120px;
+    border-radius:12px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
