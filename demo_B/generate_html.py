@@ -137,7 +137,8 @@ for sheet_name, region, bus_list in ROUTES:
             lat = row[lat_col]
             lon = row[lon_col]
 
-            image_file = row["画像"]+".jpg"
+            image_file = row["画像"] + ".jpg"
+            print("DEBUG:", image_file)
 
             if pd.isna(image_file):
                 image_file = ""
