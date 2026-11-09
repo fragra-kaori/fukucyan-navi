@@ -75,6 +75,11 @@ button {
     font-weight:bold;
 }
 
+.home-container{
+    max-width:700px;
+    margin:0 auto;
+}
+
 .course-day{
     margin:5px 0 10px 0;
     text-align:center;
