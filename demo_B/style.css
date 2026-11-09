@@ -65,6 +65,7 @@ button {
 .home-container{
     max-width:700px;
     margin:0 auto;
+    padding:0 12px;
 }
 
 .page-title{
