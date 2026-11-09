@@ -30,6 +30,11 @@ button {
     align-items:center;
 }
 
+.help-button{
+    width:220px;
+    height:100px;
+}
+
 .left-buttons{
     display:flex;
     flex-direction:column;
