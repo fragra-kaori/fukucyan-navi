@@ -107,6 +107,13 @@ button {
     counter-reset: stopnumber;
 }
 
+/* 時刻 */
+.time{
+    display:inline-block;
+    width:80px;
+    font-weight:bold;
+}
+
 /* バス停ボタン */
 .busstop {
     display: block;
