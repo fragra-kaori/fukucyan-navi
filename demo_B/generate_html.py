@@ -167,7 +167,8 @@ for sheet_name, region, bus_list in ROUTES:
             <button class="busstop"
             onclick="window.location.href='https://www.google.com/maps?q={lat},{lon}'"
             style="background:white; color:black;">
-            {bus_time}　{stop_name}
+            <span class="time">{bus_time}</span>
+            <span class="stop-name">{stop_name}</span>
             </button>
 
             </div>
